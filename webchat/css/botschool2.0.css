@@ -11,7 +11,7 @@
 #bsc-chat-container {
   width: 350px;
   z-index: 20;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
   height: 75vh;
   border-radius: 15px;
@@ -107,7 +107,7 @@
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message .dot-1,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message .dot-2,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message .dot-3 {
-  background-color: #142b57;
+  background-color: #537d51;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-menuButtons-title,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-menuButtons-title {
@@ -371,7 +371,7 @@
 }
 #bsc-chat-container .bsc-footer #bsc-footer-actions #bsc-send-button {
   border: none;
-  background-color: #52a536;
+  background-color: #537d51;
   margin-right: 5px;
   margin-left: 10px;
   mask-image: url("../../webchat/icons/send.svg");
@@ -391,14 +391,9 @@
   background-size: cover;
   background-position: 50% 50%;
   box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
-  bottom: 80px
 }
 .bsc-chat-minimized .bsc-text-container {
   display: none;
-}
-
-div.ccw_plugin{
-  z-index: 99;
 }
 
 /*# sourceMappingURL=botschool2.0.css.map */
