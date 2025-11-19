@@ -21,10 +21,10 @@
   font-family: "RobotoRegural", sans-serif;
 }
 #bsc-chat-container a {
-  color: #142b57;
+  color: #537d51;
 }
 #bsc-chat-container a:hover, #bsc-chat-container a:active, #bsc-chat-container a:visited {
-  color: #142b57;
+  color: #537d51;
 }
 #bsc-chat-container.bsc-chat-container-minimized .bsc-header {
   display: none;
@@ -41,7 +41,7 @@
 #bsc-chat-container .bsc-header-details-image {
   border-radius: 50%;
   background-color: #fff;
-  background-image: url("webchat/images/default_student.jpg");
+  background-image: url("../images/default_student.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -60,16 +60,16 @@
   font-weight: 400;
 }
 #bsc-chat-container .bsc-header-action-minimize-icon {
-  mask-image: url("../../webchat/icons/minimize.svg");
-  -webkit-mask-image: url("../../webchat/icons/minimize.svg");
+  mask-image: url("../icons/minimize.svg");
+  -webkit-mask-image: url("../icons/minimize.svg");
   background-color: #fff;
 }
 #bsc-chat-container .bsc-header-action-minimize-icon:hover {
   opacity: 1;
 }
 #bsc-chat-container .bsc-header-action-close-icon {
-  mask-image: url("../../webchat/icons/close.svg");
-  -webkit-mask-image: url("../../webchat/icons/close.svg");
+  mask-image: url("../icons/close.svg");
+  -webkit-mask-image: url("../icons/close.svg");
   background-color: #fff;
 }
 #bsc-chat-container .bsc-header-action-close-icon:hover {
@@ -121,16 +121,16 @@
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   color: white;
-  background-color: #142b57;
+  background-color: #537d51;
   border: inherit;
-  border-color: #142b57;
+  border-color: #537d51;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-menuButtons-vertical :hover, #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-menuButtons-horizontal :hover, #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-menuButtons-grid :hover,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-menuButtons-vertical :hover,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-menuButtons-horizontal :hover,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-menuButtons-grid :hover {
-  background-color: #8779e7;
+  background-color: #52a536;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-document,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-document {
@@ -141,18 +141,18 @@
   line-height: 21px;
   padding: 0.375rem 0.75rem;
   border-radius: 0.2rem;
-  background-color: #142b57;
+  background-color: #537d51;
   border: inherit;
-  border-color: #142b57;
+  border-color: #537d51;
   color: #fff;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-document button .bsc-message-document-icon,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-document button .bsc-message-document-icon {
-  background-image: url("webchat/icons/file.png");
+  background-image: url("../icons/file.png");
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-document button:hover,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-document button:hover {
-  background-color: #8779e7;
+  background-color: #52a536;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-audio,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-audio {
@@ -186,7 +186,7 @@
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-cards .swiper-button,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-cards .swiper-button {
   border-radius: 6px;
-  background-color: #142b57;
+  background-color: #537d51;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-cards .swiper-button-disabled,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-cards .swiper-button-disabled {
@@ -208,8 +208,8 @@
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-cards .swiper-button-prev:after,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-cards .swiper-button-prev:after {
   color: transparent;
-  mask-image: url("webchat/icons/left.svg");
-  -webkit-mask-image: url("webchat/icons/left.svg");
+  mask-image: url("../icons/left.svg");
+  -webkit-mask-image: url("../icons/left.svg");
   mask-repeat: no-repeat, no-repeat;
   -webkit-mask-repeat: no-repeat, no-repeat;
   mask-size: 20px;
@@ -222,8 +222,8 @@
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-cards .swiper-button-next:after,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-cards .swiper-button-next:after {
   color: transparent;
-  mask-image: url("webchat/icons/right.svg");
-  -webkit-mask-image: url("webchat/icons/right.svg");
+  mask-image: url("../icons/right.svg");
+  -webkit-mask-image: url("../icons/right.svg");
   mask-repeat: no-repeat, no-repeat;
   -webkit-mask-repeat: no-repeat, no-repeat;
   mask-size: 20px;
@@ -276,9 +276,9 @@
   line-height: 21px;
   padding: 0.375rem 0.75rem;
   color: white;
-  background-color: #142b57;
+  background-color: #537d51;
   border: inherit;
-  border-color: #142b57;
+  border-color: #537d51;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   align-items: center;
   max-width: 100%;
@@ -287,7 +287,7 @@
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message-cards-footer button:hover,
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message-cards-footer button:hover {
-  background-color: #8779e7;
+  background-color: #52a536;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-remote .bsc-message:has(bsc-message-audio) {
   padding: 0;
@@ -341,8 +341,8 @@
 #bsc-chat-container .bsc-footer #bsc-footer-actions #bsc-mic-button {
   border: none;
   background: white;
-  mask-image: url("webchat/icons/mic.svg");
-  -webkit-mask-image: url("webchat/icons/mic.svg");
+  mask-image: url("../icons/mic.svg");
+  -webkit-mask-image: url("../icons/mic.svg");
   mask-repeat: no-repeat, no-repeat;
   -webkit-mask-repeat: no-repeat, no-repeat;
   mask-size: 24px;
@@ -371,22 +371,22 @@
 }
 #bsc-chat-container .bsc-footer #bsc-footer-actions #bsc-send-button {
   border: none;
-  background-color: #537d51;
+  background-color: #cbb83b;
   margin-right: 5px;
   margin-left: 10px;
-  mask-image: url("../../webchat/icons/send.svg");
-  -webkit-mask-image: url("../../webchat/icons/send.svg");
+  mask-image: url("../icons/send.svg");
+  -webkit-mask-image: url("../icons/send.svg");
   mask-repeat: no-repeat, no-repeat;
   -webkit-mask-repeat: no-repeat, no-repeat;
   mask-size: 15px;
   -webkit-mask-size: 15px;
 }
 #bsc-chat-container .bsc-footer #bsc-footer-actions #bsc-send-button:hover {
-  background-color: #cbb83b;
+  background-color: #537d51;
 }
 
 .bsc-chat-minimized {
-  background-image: url("webchat/images/default_student.jpg");
+  background-image: url("../images/default_student.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: 50% 50%;
