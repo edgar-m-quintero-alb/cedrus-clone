@@ -30,11 +30,11 @@ Formar alunos desde o preescolar até ao bachillerato com profissionalismo e com
 
 ```
 cedrus-clone/
-├── Instituto Cedrus – Innovación, modernidad y trascendencia.html
+├── index.html                    # Página principal do site
 ├── Instituto Cedrus – Innovación, modernidad y trascendencia_files/
-├── webchat/
-├── logo.png
-└── README.md
+├── webchat/                      # Sistema de chat integrado
+├── logo.png                      # Logo principal
+└── README.md                     # Documentação do projeto
 ```
 
 ## Contacto
