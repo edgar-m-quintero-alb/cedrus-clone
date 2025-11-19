@@ -31,7 +31,7 @@
 }
 #bsc-chat-container .bsc-header {
   flex: 65px 0 0;
-  background-color: #52a536;
+  background-color: #cbb83b;
   padding: 15px 20px;
   border-radius: 15px 15px 0 0;
 }
@@ -85,7 +85,7 @@
   overflow-x: hidden;
 }
 #bsc-chat-container .bsc-message-list .bsc-message-list-container .bsc-local .bsc-message {
-  background-color: #cbb83b;
+  background-color: #52a536;
   color: white;
   border-radius: 15px 15px 0 15px;
 }
@@ -356,6 +356,15 @@
   padding: 2px;
   margin: 0px 13px 0 20px;
   color: #757575;
+  border: none;
+  /* Grant that the input maintains proper focus */
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  /* Prevent interference from keyboard events */
+  position: relative;
+  z-index: 1000;
 }
 #bsc-chat-container .bsc-footer #bsc-footer-actions #bsc-user-input::placeholder {
   color: unset;

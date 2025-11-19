@@ -93,7 +93,7 @@ html:not(.page-trans-loaded) { background-color: #ffffff; }
 <link rel="apple-touch-icon" href="https://www.cedrus.edu.mx/wp-content/uploads/2019/03/espiga.png">
 <meta name="msapplication-TileImage" content="https://www.cedrus.edu.mx/wp-content/uploads/2019/03/espiga.png">
 <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1552186692940{margin-bottom: 10px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
- 
+
 
 <script src="./Instituto Cedrus – Innovación, modernidad y trascendencia_files/wp-emoji-release.min.js.transferir" defer=""></script><style type="text/css">.wpb_column.instance-5:before { background-color:#f4f4f4;  opacity: 1; }.wpb_column.instance-9:before { background-color:#ffffff;  opacity: 1; }.wpb_column.instance-26:before { background-color:#52a536;  opacity: 0.9; }</style><style type="text/css">.row-bg-wrap.instance-4:after { background: rgba(10,10,10,0.82); background: linear-gradient(90deg,rgba(10,10,10,0.82) 0%,#000000 100%);  opacity: 0.8; }.row-bg-wrap.instance-6:after { background-color:rgba(10,6,6,0.84);  opacity: 0.95; }</style><style type="text/css" id="milestone-blur"></style>
 </head>
@@ -771,4 +771,73 @@ var pum_popups = {"pum-407":{"triggers":[{"type":"click_open","settings":{"cooki
     }'>
 </bsc-chat>
 <script src="https://webchat.ng.botschool.ai/chat-component.js"></script>
+<script>
+// Protection for webchat input fields
+
+document.addEventListener('DOMContentLoaded', function() {
+  function setupChatInput() {
+    // Search for the webchat input with multiple selectors
+    const chatInput = document.querySelector('#bsc-user-input') ||
+                     document.querySelector('bsc-chat input') ||
+                     document.querySelector('.bsc-footer input') ||
+                     document.querySelector('input[placeholder*="mensaje"]') ||
+                     document.querySelector('input[placeholder*="Escribe"]');
+
+    if (chatInput) {
+      // Prevent propagation of problematic events
+      chatInput.addEventListener('keydown', function(event) {
+        const problematicKeys = [32, 8, 46, 37, 38, 39, 40];
+        if (problematicKeys.includes(event.keyCode)) {
+          event.stopPropagation();
+        }
+      }, true);
+      
+      return true;
+    }
+    return false;
+  }
+
+  if (!setupChatInput()) {
+    // Observer to detect when the webchat loads
+    const observer = new MutationObserver(function() {
+      if (setupChatInput()) {
+        observer.disconnect();
+      }
+    });
+    
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    let tentativas = 0;
+    const interval = setInterval(function() {
+      tentativas++;
+      if (setupChatInput() || tentativas > 15) {
+        clearInterval(interval);
+        observer.disconnect();
+      }
+    }, 2000);
+  }
+});
+
+// Global interception to prevent Swiper behavior
+document.addEventListener('keydown', function(event) {
+  const activeElement = document.activeElement;
+  const isChatInput = activeElement && (
+    activeElement.id === 'bsc-user-input' ||
+    activeElement.closest('bsc-chat') ||
+    activeElement.closest('.bsc-footer') ||
+    (activeElement.placeholder && activeElement.placeholder.includes('Escribe'))
+  );
+
+  if (isChatInput) {
+    const problematicKeys = [32, 8, 46, 37, 38, 39, 40];
+    if (problematicKeys.includes(event.keyCode)) {
+      event.stopImmediatePropagation();
+      event.stopPropagation();
+    }
+  }
+}, true);
+</script>
 </html>
